@@ -10,6 +10,60 @@ body {
     font-family: "Rubik", sans-serif;
 }
 
+.card {
+    border: none;
+    border-radius: 0.5rem;
+}
+
+h5 {
+    font-size: 1rem;
+    padding-left: 1rem;
+}
+
+.w--90 {
+    width: 90%;
+}
+
 .--avatar {
     width: 2rem;
+}
+
+.--time {
+    color: #7e7e7e;
+    padding-left: 1rem;
+}
+
+.--text {
+    color: #7e7e7e;
+    padding: 0 1rem;
+}
+
+.input-group {
+    background-color: #f7f7f7;
+    border-radius: 0.5rem;
+    width: 80%;
+}
+
+.input-number {
+    background-color: #f7f7f7;
+    border: none;
+    color: hsl(281, 87%, 17%);
+    font-size: 0.9rem;
+    padding: 0.2rem;
+}
+
+.--input {
+    padding-left: 0.5rem;
+}
+
+.fa-plus,
+.fa-minus {
+    color: hsl(238, 40%, 52%);
+}
+
+.--reply {
+    background-color: #fff;
+    border: none;
+    color: hsl(238, 40%, 52%) !important;
+    text-align: end;
 }

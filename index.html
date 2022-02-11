@@ -38,32 +38,36 @@
 
     <!-- Pull dynamic content from the data.json file -->
     <div class="container-fluit">
-        <div class="card mt-5 mx-auto w-75">
-            <div>
+        <div class="card mt-5 mx-auto w--90">
+            <div class="p-3">
                 <img class="d-inline --avatar" src="./images/avatars/image-amyrobson.png" alt="avatar">
-                <h5 class="card-header d-inline">amyrobson</h5>
-                <p class="d-inline">fixed text 1 m ago</p>
+                <h5 class="d-inline">amyrobson</h5>
+                <p class="d-inline --time">fixed text 1 m ago</p>
             </div>
             <div>
-                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <p class="card-text --text">With supporting text below as a natural lead-in to additional content.</p>
             </div>
-            <div class="card-body">
-                <!-- Credit to Bootsnip https://bootsnipp.com/snippets/dGWP -->
-                <div class="input-group">
-                    <span class="input-group-btn">
-						<button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus" data-field="quant[1]">
-							<span class="glyphicon glyphicon-plus"><i class="fa-solid fa-plus"></i></span>
-                    </button>
-                    </span>
-                    <input type="text" name="quant[1]" class="form-control input-number" value="1" min="1" max="10">
-                    <span class="input-group-btn">
-						<button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[1]">
-							<span class="glyphicon glyphicon-minus"><i class="fa-solid fa-minus"></i></span>
-                    </button>
-                    </span>
+            <div class="card-body row">
+                <!-- Credit: Bootsnip https://bootsnipp.com/snippets/dGWP -->
+                <div class="col --input">
+                    <div class="input-group">
+                        <span class="input-group-btn">
+							<button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus" data-field="quant[1]">
+								<span class="glyphicon glyphicon-plus"><i class="fa-solid fa-plus fa-sm"></i></span>
+                        </button>
+                        </span>
+                        <input type="text" name="quant[1]" class="form-control input-number text-center" value="1" min="1" max="99">
+                        <span class="input-group-btn">
+							<button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[1]">
+								<span class="glyphicon glyphicon-minus"><i class="fa-solid fa-minus fa-sm"></i></span>
+                        </button>
+                        </span>
+                    </div>
                 </div>
                 <!-- Credit End -->
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+                <div class="col pr-0 --reply">
+                    <a href="#" class="btn btn-primary --reply"><i class="fa-solid fa-reply"></i><span class="pl-2 pr-0">Reply</span></a>
+                </div>
             </div>
         </div>
     </div>
