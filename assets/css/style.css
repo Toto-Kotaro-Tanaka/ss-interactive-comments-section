@@ -41,13 +41,12 @@ h5 {
 .input-group {
     background-color: #f7f7f7;
     border-radius: 0.5rem;
-    width: 80%;
 }
 
 .input-number {
     background-color: #f7f7f7;
     border: none;
-    color: hsl(281, 87%, 17%);
+    color: hsl(238, 40%, 52%);
     font-size: 0.9rem;
     padding: 0.2rem;
 }
@@ -61,9 +60,15 @@ h5 {
     color: hsl(238, 40%, 52%);
 }
 
-.--reply {
+.--reply,
+.--delete,
+.--edit {
     background-color: #fff;
     border: none;
     color: hsl(238, 40%, 52%) !important;
     text-align: end;
+}
+
+.--delete {
+    color: rgba(255, 0, 0, 0.753) !important;
 }
