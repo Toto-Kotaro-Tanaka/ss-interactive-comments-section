@@ -72,3 +72,13 @@ h5 {
 .--delete {
     color: rgba(255, 0, 0, 0.753) !important;
 }
+
+.btn--you {
+    background-color: hsl(238, 40%, 52%);
+    border-top: 0;
+    border-color: #fff;
+    border-radius: 0.1rem;
+    color: #fff;
+    font-size: 0.8rem;
+    padding: 0 0.4rem 0.1875rem;
+}
