@@ -8,6 +8,7 @@
 body {
     background-color: #f7f7f7;
     font-family: "Rubik", sans-serif;
+    margin: 0 auto;
 }
 
 .card {
@@ -81,4 +82,13 @@ h5 {
     color: #fff;
     font-size: 0.8rem;
     padding: 0 0.4rem 0.1875rem;
+}
+
+
+/* Media Query: Screen Size Bigger Than 62rem / 992px */
+
+@media only screen and (min-width: 62rem) {
+    body {
+        width: 62rem;
+    }
 }
