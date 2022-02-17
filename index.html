@@ -39,15 +39,38 @@
     <!-- Pull dynamic content from the data.json file -->
     <div class="container-fluit">
         <div class="card mt-5 mx-auto w--90">
-            <div class="p-3">
-                <img class="d-inline --avatar" src="./images/avatars/image-amyrobson.png" alt="avatar">
-                <h5 class="d-inline">amyrobson</h5>
-                <p class="d-inline --time">1 month ago</p>
+            <div class="row">
+                <div class="col-md-1 d-none d-md-inline mt-3 pr-1 pb-3">
+                    <div class="ml-3 input-group">
+                        <div class="input-group-btn mx-auto">
+                            <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus" data-field="quant[1]">
+                                <div class="glyphicon glyphicon-plus"><i class="fa-solid fa-plus fa-sm"></i></div>
+                            </button>
+                        </div>
+                        <div>
+                            <input type="text" name="quant[1]" class="form-control input-number font-weight-bold text-center" value="55" min="1" max="99">
+                        </div>
+                        <div class="input-group-btn mx-auto">
+                            <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[1]">
+                                <div class="glyphicon glyphicon-minus"><i class="fa-solid fa-minus fa-sm"></i></div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-11">
+                    <div class="p-3">
+                        <img class="d-inline --avatar" src="./images/avatars/image-amyrobson.png" alt="avatar">
+                        <h5 class="d-inline">amyrobson</h5>
+                        <p class="d-inline --time">1 month ago</p>
+                        <a href="#" class="btn d-none d-md-inline float-md-right btn-primary --reply"><i class="fa-solid fa-reply"></i><span class="pl-2 pr-0">Reply</span></a>
+                    </div>
+                    <div class="mb-md-3">
+                        <p class="card-text --text">Impressive! Though it seems the drag feature could be improved. But overall it looks incredible. You've nailed the design and the responsiveness at various breakpoints works really well.</p>
+                    </div>
+                </div>
             </div>
-            <div>
-                <p class="card-text --text">Impressive! Though it seems the drag feature could be improved. But overall it looks incredible. You've nailed the design and the responsiveness at various breakpoints works really well.</p>
-            </div>
-            <div class="card-body row">
+
+            <div class="card-body row d-md-none">
                 <!-- Credit: Bootsnip https://bootsnipp.com/snippets/dGWP -->
                 <div class="col m-0 --input">
                     <div class="input-group">
