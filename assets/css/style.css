@@ -74,12 +74,6 @@ h5 {
     color: rgba(255, 0, 0, 0.753) !important;
 }
 
-
-/* button:hover,
-button:focus {
-    outline: none;
-} */
-
 .btn--you {
     background-color: hsl(238, 40%, 52%);
     border-top: 0;
@@ -96,10 +90,10 @@ button:focus {
 }
 
 
-/* Media Query: Screen Size Bigger Than 62rem / 992px */
+/* Media Query: Screen Size Bigger Than 50rem / 800px */
 
-@media only screen and (min-width: 62rem) {
+@media only screen and (min-width: 50rem) {
     body {
-        width: 62rem;
+        width: 50rem;
     }
 }
