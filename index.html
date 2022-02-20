@@ -62,7 +62,7 @@
                         <img class="d-inline --avatar" src="./images/avatars/image-amyrobson.png" alt="avatar">
                         <h5 class="d-inline">amyrobson</h5>
                         <p class="d-inline --time">1 month ago</p>
-                        <btn href="#" class="btn d-none d-md-inline float-md-right --reply"><i class="fa-solid fa-reply"></i><span class="pl-2 pr-0">Reply</span></btn>
+                        <btn class="btn d-none d-md-inline float-md-right --reply"><i class="fa-solid fa-reply"></i><span class="pl-2 pr-0">Reply</span></btn>
                     </div>
                     <div class="mb-md-3">
                         <p class="card-text --text">Impressive! Though it seems the drag feature could be improved. But overall it looks incredible. You've nailed the design and the responsiveness at various breakpoints works really well.</p>
@@ -126,7 +126,7 @@
                     <btn type="button" class="btn pr-0 --delete" data-bs-toggle="modal" data-bs-target="#deleteModal"><i class="fa-solid fa-trash"></i><span class="pl-2 pr-0">Delete</span></btn>
                 </div>
                 <div class="col-3 p-0 --reply">
-                    <a href="#" class="btn --edit"><i class="fa-solid fa-pen"></i><span class="pl-2 pr-0">Edit</span></a>
+                    <btn href="#" class="btn --edit"><i class="fa-solid fa-pen"></i><span class="pl-2 pr-0">Edit</span></btn>
                 </div>
             </div>
         </div>
@@ -140,12 +140,12 @@
                     <h4 class="modal-title" id="exampleModalLabel">Delete comment</h4>
                     <div type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="fa-solid fa-xmark"></i></div>
                 </div>
-                <div class="modal-body text-secondary pt-0 pb-0">
+                <div class="modal-body text-muted pt-0 pb-0">
                     Are you sure you want to delete this comment? This will remove the comment and can't be undone.
                 </div>
                 <div class="modal-footer mx-auto">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">NO, CANCEL</button>
-                    <button type="button" class="btn btn-danger">YES, DELETE</button>
+                    <button type="button" class="btn --delete-bg text-white">YES, DELETE</button>
                 </div>
             </div>
         </div>

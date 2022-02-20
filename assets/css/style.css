@@ -70,8 +70,29 @@ h5 {
     text-align: end;
 }
 
+.--reply:hover,
+.--edit:hover {
+    color: hsl(238, 76%, 39%) !important;
+}
+
 .--delete {
+    color: rgba(255, 61, 61, 0.753) !important;
+}
+
+.--delete:hover {
     color: rgba(255, 0, 0, 0.753) !important;
+}
+
+.--delete-bg {
+    background-color: rgba(255, 61, 61, 0.753) !important;
+}
+
+.--delete-bg:hover {
+    background-color: rgba(255, 0, 0, 0.753) !important;
+}
+
+.btn:focus {
+    box-shadow: none !important;
 }
 
 .btn--you {
