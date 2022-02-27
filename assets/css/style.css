@@ -54,6 +54,11 @@ h5 {
 
 .--input {
     padding-left: 0.5rem;
+    max-width: 9rem;
+}
+
+.num--input {
+    width: 1.5rem !important;
 }
 
 .fa-plus,
@@ -105,16 +110,37 @@ h5 {
     padding: 0 0.4rem 0.1875rem;
 }
 
+.btn--you:hover {
+    background-color: hsl(238, 76%, 39%) !important;
+    color: #fff !important;
+}
+
 .modal-header,
 .modal-footer {
     border: none;
 }
 
 
-/* Media Query: Screen Size Bigger Than 50rem / 800px */
+/* Frontend Mentor Default */
 
-@media only screen and (min-width: 50rem) {
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+
+/* Media Query: Screen Size Bigger Than 48rem / 768px */
+
+@media only screen and (min-width: 48rem) {
     body {
-        width: 50rem;
+        width: 48rem;
     }
 }
