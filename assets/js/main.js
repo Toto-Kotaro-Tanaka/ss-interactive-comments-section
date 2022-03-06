@@ -15,10 +15,11 @@ fetch("./data.json")
 function appendData(data) {
     const comments = document.getElementById("comments");
     const replyOne = document.getElementById("replyOne");
+    const replyTwo = document.getElementById("replyTwo");
 
     for (let i = 0; i < data.comments.length; i++) {
-        let div = document.createElement("div");
-        div.innerHTML = `
+        let commentDiv = document.createElement("div");
+        commentDiv.innerHTML = `
             <div class="card mt-3 mx-auto w--90">
                 <div class="row">
                     <div class="col-md-1 d-none d-md-inline mt-3 pb-3">
@@ -76,11 +77,11 @@ function appendData(data) {
             </div>
         `;
 
-        comments.appendChild(div);
+        comments.appendChild(commentDiv);
 
         if (data.comments[i].replies.length !== 0) {
-            let div = document.createElement("div");
-            div.innerHTML = `
+            let replyDivOne = document.createElement("div");
+            replyDivOne.innerHTML = `
                 <div class="comment-reply">
                     <div class="card mt-3 mx-auto w--90">
                         <div class="row">
@@ -139,7 +140,48 @@ function appendData(data) {
                     </div>
                 </div>
                 `;
-            replyOne.appendChild(div);
+
+            replyOne.appendChild(replyDivOne);
+
+            let replyDivTwo = document.createElement("div");
+            replyDivTwo.innerHTML = `
+                <div class="card mt-3 mx-auto w--90">
+                    <div class="p-3">
+                        <img class="d-inline --avatar" src="${data.comments[i].replies[1].user.image.png}" alt="avatar">
+                        <h5 class="d-inline">${data.comments[i].replies[1].user.username}</h5>
+                        <button class="btn btn--you">you</button>
+                        <p class="d-inline --time">${data.comments[i].replies[1].createdAt}</p>
+                    </div>
+                    <div>
+                        <p class="card-text --text"><a class="font-weight-bold --at" href="#">@${data.comments[i].replies[1].replyingTo}</a> ${data.comments[i].replies[1].content}</p>
+                    </div>
+                    <div class="card-body row">
+                        <div class="col m-0 --input">
+                            <div class="input-group">
+                                <span class="input-group-btn">
+                                    <button type="button" class="btn btn-default btn-number pl-2 pr-2" disabled="disabled" data-type="minus" data-field="quant[1]">
+                                        <span class="glyphicon glyphicon-plus"><i class="fa-solid fa-plus fa-sm"></i></span>
+                                </button>
+                                </span>
+                                <input type="text" name="quant[1]" class="form-control input-number font-weight-bold text-center" value="${data.comments[i].replies[1].score}" min="1" max="99">
+                                <span class="input-group-btn">
+                                    <button type="button" class="btn btn-default btn-number pl-2 pr-2" data-type="plus" data-field="quant[1]">
+                                        <span class="glyphicon glyphicon-minus"><i class="fa-solid fa-minus fa-sm"></i></span>
+                                </button>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="col p-0 --reply">
+                            <btn type="button" class="btn pr-0 --delete" data-bs-toggle="modal" data-bs-target="#deleteModal"><i class="fa-solid fa-trash"></i><span class="pl-2 pr-0">Delete</span></btn>
+                        </div>
+                        <div class="col-3 p-0 --reply">
+                            <btn href="#" class="btn pl-0 --edit"><i class="fa-solid fa-pen"></i><span class="pl-2 pr-0">Edit</span></btn>
+                        </div>
+                    </div>
+                </div>
+                `;
+
+            replyTwo.appendChild(replyDivTwo);
         }
     }
 }

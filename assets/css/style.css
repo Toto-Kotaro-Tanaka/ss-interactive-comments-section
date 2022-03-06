@@ -25,6 +25,10 @@ h5 {
     margin-top: 2rem !important;
 }
 
+.pl--5 {
+    padding-left: 5%;
+}
+
 .w--90 {
     width: 90%;
 }
