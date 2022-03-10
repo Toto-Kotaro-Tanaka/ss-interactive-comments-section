@@ -25,14 +25,46 @@
 <body>
 
     <div class="container-fluit">
+        <!-- To Keep Margin on Top of First Comment -->
         <div class="mt--2"></div>
+
+        <!-- Comment Section - Render All Comments -->
         <div id="comments"></div>
+
+        <!-- Replies Section -->
         <div class="pl--5">
             <div class="border-left">
                 <div id="replyOne"></div>
                 <div id="replyTwo"></div>
             </div>
         </div>
+
+        <!-- Add Comment Section -->
+        <div class="card mt-3 mx-auto w--90">
+            <div class="row">
+                <div class="col-12">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Add a comment...">
+                        </div>
+                    </form>
+                </div>
+
+                <div class="col-6">
+                    <img class="d-inline --avatar" src="./images/avatars/image-juliusomo.png" alt="avatar">
+                </div>
+
+
+                <div class="col-6">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+
+                    <!-- <div class="col p-0 --reply">
+                        <btn class="btn --reply"><i class="fa-solid fa-reply"></i><span class="pl-2 pr-0">Reply</span></btn>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+
     </div>
 
     <!-- Credit: Bootstrap Modal -->

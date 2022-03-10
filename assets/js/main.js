@@ -25,7 +25,7 @@ function appendData(data) {
                     <div class="col-md-1 d-none d-md-inline mt-3 pb-3">
                         <div class="ml-4 input-group">
                             <div class="input-group-btn mx-auto">
-                                <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus" data-field="quant[1]">
+                                <button type="button" class="btn btn-default btn-number pl-0 pr-0" disabled="disabled" data-type="minus" data-field="quant[1]">
                                     <div class="glyphicon glyphicon-plus"><i class="fa-solid fa-plus fa-sm"></i></div>
                                 </button>
                             </div>
@@ -33,7 +33,7 @@ function appendData(data) {
                                 <input type="text" name="quant[1]" class="form-control input-number font-weight-bold text-center" value="${data.comments[i].score}" min="1" max="99">
                             </div>
                             <div class="input-group-btn mx-auto">
-                                <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[1]">
+                                <button type="button" class="btn btn-default btn-number pl-0 pr-0" data-type="plus" data-field="quant[1]">
                                     <div class="glyphicon glyphicon-minus"><i class="fa-solid fa-minus fa-sm"></i></div>
                                 </button>
                             </div>
@@ -89,7 +89,7 @@ function appendData(data) {
                             <div class="col-md-1 d-none d-md-inline mt-3 pb-3">
                                 <div class="ml-4 input-group">
                                     <div class="input-group-btn mx-auto">
-                                        <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus" data-field="quant[1]">
+                                        <button type="button" class="btn btn-default btn-number pl-0 pr-0" disabled="disabled" data-type="minus" data-field="quant[1]">
                                             <div class="glyphicon glyphicon-plus"><i class="fa-solid fa-plus fa-sm"></i></div>
                                         </button>
                                     </div>
@@ -97,7 +97,7 @@ function appendData(data) {
                                         <input type="text" name="quant[1]" class="form-control input-number font-weight-bold text-center" value="${data.comments[i].replies[0].score}" min="1" max="99">
                                     </div>
                                     <div class="input-group-btn mx-auto">
-                                        <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[1]">
+                                        <button type="button" class="btn btn-default btn-number pl-0 pr-0" data-type="plus" data-field="quant[1]">
                                             <div class="glyphicon glyphicon-minus"><i class="fa-solid fa-minus fa-sm"></i></div>
                                         </button>
                                     </div>
@@ -152,7 +152,7 @@ function appendData(data) {
                         <div class="col-md-1 d-none d-md-inline mt-3 pb-3">
                             <div class="ml-4 input-group">
                                 <div class="input-group-btn mx-auto">
-                                    <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus" data-field="quant[1]">
+                                    <button type="button" class="btn btn-default btn-number pl-0 pr-0" disabled="disabled" data-type="minus" data-field="quant[1]">
                                         <div class="glyphicon glyphicon-plus"><i class="fa-solid fa-plus fa-sm"></i></div>
                                     </button>
                                 </div>
@@ -160,7 +160,7 @@ function appendData(data) {
                                     <input type="text" name="quant[1]" class="form-control input-number font-weight-bold text-center" value="${data.comments[i].replies[1].score}" min="1" max="99">
                                 </div>
                                 <div class="input-group-btn mx-auto">
-                                    <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[1]">
+                                    <button type="button" class="btn btn-default btn-number pl-0 pr-0" data-type="plus" data-field="quant[1]">
                                         <div class="glyphicon glyphicon-minus"><i class="fa-solid fa-minus fa-sm"></i></div>
                                     </button>
                                 </div>
