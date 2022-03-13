@@ -5,7 +5,7 @@ fetch("./data.json")
         return response.json();
     })
     .then(function(data) {
-        console.log(data);
+        // console.log(data);
         appendData(data);
     })
     .catch(function(err) {
@@ -25,7 +25,7 @@ function appendData(data) {
                     <div class="col-md-1 d-none d-md-inline mt-3 pb-3">
                         <div class="ml-4 input-group">
                             <div class="input-group-btn mx-auto">
-                                <button type="button" class="btn btn-default btn-number pl-0 pr-0" disabled="disabled" data-type="minus" data-field="quant[1]">
+                                <button type="button" id="btn--plus" class="btn btn-default btn-number pl-0 pr-0" data-type="minus" data-field="quant[1]">
                                     <div class="glyphicon glyphicon-plus"><i class="fa-solid fa-plus fa-sm"></i></div>
                                 </button>
                             </div>
@@ -57,7 +57,7 @@ function appendData(data) {
                     <div class="col m-0 --input">
                         <div class="input-group">
                             <span class="input-group-btn">
-                                <button type="button" class="btn btn-default btn-number pl-2 pr-2" disabled="disabled" data-type="minus" data-field="quant[1]">
+                                <button type="button" class="btn btn-default btn-number pl-2 pr-2" data-type="minus" data-field="quant[1]">
                                     <span class="glyphicon glyphicon-plus"><i class="fa-solid fa-plus fa-sm"></i></span>
                             </button>
                             </span>
@@ -89,7 +89,7 @@ function appendData(data) {
                             <div class="col-md-1 d-none d-md-inline mt-3 pb-3">
                                 <div class="ml-4 input-group">
                                     <div class="input-group-btn mx-auto">
-                                        <button type="button" class="btn btn-default btn-number pl-0 pr-0" disabled="disabled" data-type="minus" data-field="quant[1]">
+                                        <button type="button" class="btn btn-default btn-number pl-0 pr-0" data-type="minus" data-field="quant[1]">
                                             <div class="glyphicon glyphicon-plus"><i class="fa-solid fa-plus fa-sm"></i></div>
                                         </button>
                                     </div>
@@ -121,7 +121,7 @@ function appendData(data) {
                             <div class="col m-0 --input">
                                 <div class="input-group">
                                     <span class="input-group-btn">
-                                        <button type="button" class="btn btn-default btn-number pl-2 pr-2" disabled="disabled" data-type="minus" data-field="quant[1]">
+                                        <button type="button" class="btn btn-default btn-number pl-2 pr-2" data-type="minus" data-field="quant[1]">
                                             <span class="glyphicon glyphicon-plus"><i class="fa-solid fa-plus fa-sm"></i></span>
                                     </button>
                                     </span>
@@ -152,7 +152,7 @@ function appendData(data) {
                         <div class="col-md-1 d-none d-md-inline mt-3 pb-3">
                             <div class="ml-4 input-group">
                                 <div class="input-group-btn mx-auto">
-                                    <button type="button" class="btn btn-default btn-number pl-0 pr-0" disabled="disabled" data-type="minus" data-field="quant[1]">
+                                    <button type="button" class="btn btn-default btn-number pl-0 pr-0" data-type="minus" data-field="quant[1]">
                                         <div class="glyphicon glyphicon-plus"><i class="fa-solid fa-plus fa-sm"></i></div>
                                     </button>
                                 </div>
@@ -186,7 +186,7 @@ function appendData(data) {
                         <div class="col m-0 --input">
                             <div class="input-group">
                                 <span class="input-group-btn">
-                                    <button type="button" class="btn btn-default btn-number pl-2 pr-2" disabled="disabled" data-type="minus" data-field="quant[1]">
+                                    <button type="button" class="btn btn-default btn-number pl-2 pr-2" data-type="minus" data-field="quant[1]">
                                         <span class="glyphicon glyphicon-plus"><i class="fa-solid fa-plus fa-sm"></i></span>
                                 </button>
                                 </span>
