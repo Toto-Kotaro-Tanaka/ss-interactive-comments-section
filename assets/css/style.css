@@ -173,4 +173,8 @@ a:hover {
     body {
         width: 48rem;
     }
+    .--comment {
+        height: 4rem !important;
+        width: 105%;
+    }
 }
