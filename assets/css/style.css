@@ -29,6 +29,14 @@ h5 {
     padding-left: 5%;
 }
 
+.pl--1875 {
+    padding-left: 1.875rem;
+}
+
+.pr--1875 {
+    padding-right: 1.875rem;
+}
+
 .w--90 {
     width: 90%;
 }
@@ -122,9 +130,19 @@ h5 {
     padding: 0 0.4rem 0.1875rem;
 }
 
-.btn--you:hover {
+.btn--you:hover,
+.btn--send:hover {
     background-color: hsl(238, 76%, 39%) !important;
     color: #fff !important;
+}
+
+.btn--send {
+    background-color: hsl(238, 40%, 52%);
+    color: #fff;
+}
+
+.--comment {
+    height: 6rem !important;
 }
 
 .modal-header,
