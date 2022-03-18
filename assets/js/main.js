@@ -30,10 +30,10 @@ function appendData(data) {
                                 </button>
                             </div>
                             <div>
-                                <input type="text" name="quant[1]" class="form-control input-number font-weight-bold text-center" value="${data.comments[i].score}" min="1" max="99">
+                                <input type="text" name="quant[1]" id="input" class="form-control input-number font-weight-bold text-center" value="${data.comments[i].score}" min="1" max="99">
                             </div>
                             <div class="input-group-btn mx-auto">
-                                <button type="button" class="btn btn-default btn-number pl-0 pr-0" data-type="plus" data-field="quant[1]">
+                                <button type="button" id="btn--minus" class="btn btn-default btn-number pl-0 pr-0" data-type="plus" data-field="quant[1]">
                                     <div class="glyphicon glyphicon-minus"><i class="fa-solid fa-minus fa-sm"></i></div>
                                 </button>
                             </div>
@@ -214,8 +214,8 @@ function appendData(data) {
 }
 
 // Increment and decrement btns test
-const incrementButton = document.getElementById("btnInc");
-const decrementButton = document.getElementById("btnDec");
+const plusButton = document.getElementById("btn--plus");
+const minusButton = document.getElementById("btn--minus");
 let input = document.getElementById("input");
 
 function quantity(qty) {
@@ -228,20 +228,20 @@ function quantity(qty) {
     }
 }
 
-function disableIncBtn() {
-    incrementButton.disabled = true;
+function disablePlusBtn() {
+    plusButton.disabled = true;
 }
 
-function disableDecBtn() {
-    decrementButton.disabled = true;
+function disableMinusBtn() {
+    minusButton.disabled = true;
 }
 
-incrementButton.addEventListener("click", () => {
+plusButton.addEventListener("click", () => {
     quantity("+");
-    disableIncBtn();
+    disablePlusBtn();
 });
 
-decrementButton.addEventListener("click", () => {
+minusButton.addEventListener("click", () => {
     quantity("-");
-    disableDecBtn();
+    disableMinusBtn();
 });
