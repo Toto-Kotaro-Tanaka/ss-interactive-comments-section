@@ -212,3 +212,36 @@ function appendData(data) {
         }
     }
 }
+
+// Increment and decrement btns test
+const incrementButton = document.getElementById("btnInc");
+const decrementButton = document.getElementById("btnDec");
+let input = document.getElementById("input");
+
+function quantity(qty) {
+    console.log(`clicked ${qty} button`);
+    if (qty === "+" && input.value < 99) {
+        input.value = parseInt(input.value) + 1;
+    }
+    if (qty === "-" && input.value > 0) {
+        input.value = parseInt(input.value) - 1;
+    }
+}
+
+function disableIncBtn() {
+    incrementButton.disabled = true;
+}
+
+function disableDecBtn() {
+    decrementButton.disabled = true;
+}
+
+incrementButton.addEventListener("click", () => {
+    quantity("+");
+    disableIncBtn();
+});
+
+decrementButton.addEventListener("click", () => {
+    quantity("-");
+    disableDecBtn();
+});
